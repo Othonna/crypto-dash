@@ -1,13 +1,15 @@
 import Head from 'next/head'
-import Sidebar from './components/sidebar';
-import Header from './components/header';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
 
 
 export default function Home() {
   return (
+  <div>
     <div>
-     <Sidebar />
-     <Header />
+      <Sidebar />
+      <Header />
+    </div>
   </div>
   )
 }

@@ -14,9 +14,7 @@ const Color = ["from-indigo-500 to-blue-500", "from-blue-400 to-blue-300", "from
 const Card = (props) => {
     var balance = props.balance
     balance = balance * 9.5;
-
-
-
+    
     return (
         <div className={`transform hover:scale-110 cursor-pointer transition delay-100 w-3/12  p-2 py-4 shadow-xl  border rounded-xl bg-gradient-to-r ${Color[props.icon]}`} >
             <div className="flex justify-between">
@@ -29,7 +27,7 @@ const Card = (props) => {
                 {props.title}
             </p>
             <p className="text-gray-50 text-lg font-semibold  ">
-                {props.balance} EGLD
+                {props.balance} HLS
             </p>
             <p className="text-gray-300 text-sm ">
                 ${balance}

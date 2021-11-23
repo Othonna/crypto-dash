@@ -1,10 +1,12 @@
 import React from 'react'
 import Card from './Card'
+import Middle from './Middle'
+import RightBar from './RightBar'
 
 const Container = () => {
     return (
         <div className=" bg-gradient-to-r from-gray-100 to-gray-50 h-full " >
-            <div className="  px-8 py-1 ">
+            <div className="px-8 py-1 ">
                 <p className="text-gray-500 text-lg">
                     Heliosphere
             </p>
@@ -19,7 +21,8 @@ const Container = () => {
                 <Card title="DELEGATED" balance={339.0790} icon={3} />
             </div>
             <div className="flex ml-3 mt-6 space-x-6  mr-4">
-                
+                <Middle />
+                <RightBar />
             </div>
         </div>
     )
